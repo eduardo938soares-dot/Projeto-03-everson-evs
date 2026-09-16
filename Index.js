@@ -42,11 +42,13 @@ if (acessoStatus === "Acesso à piscina negado" || pagamentoStatus === "pagament
   const resumo =`
   nome: ${nome}
  idade: ${idade}
-
-
-
-
-  
+categoria: ${categoria}
+possuiCarteirinha: ${posssuiCarteirinha}
+inadimplente: ${inadimplente}
+valorMensalidade: ${valorMensalidade}
+valorPago: ${valorPago}
+`
+  console.log (resumo)
 
 
 

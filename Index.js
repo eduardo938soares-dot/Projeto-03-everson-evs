@@ -39,16 +39,21 @@ let pagamentoStatus = "Pagamento pendente"
 if (acessoStatus === "Acesso à piscina negado" || pagamentoStatus === "pagamento aprovado") {
   statusAcesso = "Entrada no clube não confirmada"
 }
-  const resumo =`
-  nome: ${nome}
- idade: ${idade}
-categoria: ${categoria}
-possuiCarteirinha: ${posssuiCarteirinha}
-inadimplente: ${inadimplente}
-valorMensalidade: ${valorMensalidade}
-valorPago: ${valorPago}
-`
-  console.log (resumo)
-
-
+  
+module.exports = {
+    nome,
+    idade,
+    categoria,
+    possuiCarteirinha,
+    inadimplente,
+    valorMensalidade,
+    valorPago,
+    idadeStatus,
+    nivelAcesso,
+    acessoStatus,
+    pagamentoStatus,
+    troco,
+    statusAcesso,
+    resumo,
+}
 

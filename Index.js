@@ -22,7 +22,7 @@ if (cliente.tipoUsuario === "comum") {
 //---verificação de liberação de acesso---
 let acessoStatus = "Acesso à piscina liberado"
 //se não tiver carteirinha, estiver inadimplente ou for menor de idade, nega o acesso
-if (!possuiCarteirinha || inadimplente|| idadeStatus === "idade não permitida") {
+if (possuiCarteirinha || inadimplente|| idadeStatus === "idade não permitida") {
   acessoStatus = "Acesso à piscina negado"
   //---identificar corretamente a situação do pagamento---
 let pagamentoStatus = "Pagamento pendente"
